@@ -14,7 +14,7 @@ if (99 < a && a < 1000) ;
     int c = b % 10;
     Console.WriteLine(c);
 }
-        else
-{
-    Console.WriteLine("Введите трехзначное число");
-}
+//else
+//{
+//Console.WriteLine("Ошибка! Введите трехзначное число"); //	"message": "\"else\" не может запускать оператор. [OmniSharpMiscellaneousFiles.csproj]",
+//}
