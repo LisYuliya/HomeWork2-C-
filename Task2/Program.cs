@@ -6,8 +6,9 @@
 
 //32679 -> 6
 
+Console.WriteLine("Введите число");
 
-int a = -5488;
+int a = Convert.ToInt32(Console.ReadLine());
 
 if (a < 0) a = a * (-1);
 
@@ -20,5 +21,6 @@ else
         a = a / 10;
     }
     a = a % 10;
+    System.Console.Write("Третья цифра числа: ");
     System.Console.WriteLine(a);
 }

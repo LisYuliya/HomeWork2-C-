@@ -4,13 +4,21 @@
 //7 -> да
 //1 -> нет
 
+Console.WriteLine("Введите число и узнайте какой это будет день недели");
 
-int a = 817;
+int a = Convert.ToInt32(Console.ReadLine());
+
+//int a = 817;
 if (a <= 0)
 {
-    System.Console.WriteLine("Не бывает отрицательных и нулевых дней, это все настроение.");
-    System.Console.WriteLine("Надо выпить вкусный кофе и все пройдет:)");
-    System.Console.WriteLine("А пока надо ввести положительное число :)");
+    do
+    {
+        System.Console.WriteLine("Не бывает отрицательных и нулевых дней, это все настроение.");
+        System.Console.WriteLine("Надо выпить вкусный кофе и все пройдет:)");
+        System.Console.WriteLine("А пока надо ввести положительное число :)");
+        a = Convert.ToInt32(Console.ReadLine());
+    }
+    while (a <= 0);
 }
 if (a > 7) a = a - (7 * (a / 7));
 
